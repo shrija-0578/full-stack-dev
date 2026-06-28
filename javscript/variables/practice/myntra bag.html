@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>myntra bag  </title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        #container {
+            display: flex;
+            flex-direction: column;
+            justify-content: top;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8b0b0;
+        }
+        #buttons {
+            display: flex;
+            justify-content: center;
+            align-items: top;
+            flex-wrap: wrap;
+            margin-bottom: 10vh;
+        }
+        #add-to-bag, #remove-from-bag ,#sale {
+            padding: 10px 20px;
+            font-size: 25px;
+            margin: 10px;
+            margin-top: 20vh;
+            height: 8vh;
+            width: 25vw;
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+        }
+        #add-to-bag {
+            background-color: #4CAF50;
+            color: white;
+        }
+        #remove-from-bag {
+            background-color: #fa3232;
+            color: #fff;
+        }
+        #sale {
+            background-color: #ff9800;
+            color: #fff;
+        }
+        #cart_summary {
+            margin-top: 20px;
+            font-size: 64px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="buttons">
+            <button id="add-to-bag" onclick="alert('Item has been added to bag');">🛍️Add to Bag</button>
+            <button id="remove-from-bag" onclick="alert('Item has been removed from bag')";>Remove from Bag</button>
+            <button id="sale" onclick="alert('offer applied');">🎊Add 1+1 sale</button>
+        </div>
+        <h1 id="cart_summary">Empty Cart</h1>
+    </div>
+    
+    <script>
+        let cartQty=0;
+        document.querySelector('#add-to-bag').addEventListener('click', function() {
+            cartQty++;
+            document.querySelector('#cart_summary').innerText=`Your Cart has ${cartQty} items`;
+        });
+        document.querySelector('#remove-from-bag').addEventListener('click', function() {
+            if (cartQty > 0) {
+                cartQty--;
+                document.querySelector('#cart_summary').innerText=`Your Cart has ${cartQty} items`;
+            }
+        });
+        document.querySelector('#sale').addEventListener('click', function() {
+                cartQty+=2;
+                document.querySelector('#cart_summary').innerText=`Your Cart has ${cartQty} `;
+            }
+        );
+    </script>
+</body> 
+</html>
