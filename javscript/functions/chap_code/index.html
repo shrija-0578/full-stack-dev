@@ -5,20 +5,27 @@
 </head>
 <body>
     <script>
-        let number;
-        number=prompt('Enter a number');
-        checkevodd(number);
-        function checkevodd(num)
+        // let number;
+        // number=prompt('Enter a number');
+        // checkevodd(number);
+        // function checkevodd(num)
+        // {
+        //     if(num%2==0)
+        // {
+        //     console.log(`${num} is even`);
+        // }
+        // else
+        // {
+        //     console.log(`${num} is odd`);
+        // }
+        // }
+
+        function genranno()
         {
-            if(num%2==0)
-        {
-            console.log(`${num} is even`);
+            let randomNumber=Math.round(Math.random()*100);
+            return randomNumber;
         }
-        else
-        {
-            console.log(`${num} is odd`);
-        }
-        }
+        console.log(genranno());
     </script>
 </body>
 </html>
