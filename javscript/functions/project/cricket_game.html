@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cricket Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #main{
+            background-color: #ffe0e0;
+            width: 40vw;
+            height: 30vh;
+            margin: 20vh auto; 
+            padding: 20px;
+        }
+        #buttons {
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            width: 100px;
+            height: 40px;
+            background-color: #af4c4c;
+            cursor: pointer;
+        }   
+        p{
+            font-size: 20px;
+            font-weight: bold;
+            background-color: #f25656;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="main">
+        <h1>Cricket Game</h1>
+        <div id="buttons">
+            <button id="bat" onclick="playGame('bat')">Bat</button>
+            <button id="ball" onclick="playGame('ball')">Ball</button>
+            <button id="stump" onclick="playGame('stump')">Stump</button>
+        </div>
+        <h3 id="result"></h3>
+        <p>Score: <span id="score">0</span></p>
+    </div>
+
+    <script>
+        let userChoice;
+        let computerChoice;
+        let resultmes;
+        let score=0;
+        function playGame(userChoice) {
+            console.log(`You chose ${userChoice}`);
+            let randomNumber = Math.round(Math.random() * 2);
+            if (randomNumber == 0) {
+                computerChoice = 'bat';
+                console.log('Computer chose bat');
+            } else if (randomNumber == 1) {
+                computerChoice = 'ball';
+                console.log('Computer chose ball');
+            } else {
+                computerChoice = 'stump';
+                console.log('Computer chose stump');
+            }
+
+            if (userChoice === computerChoice) {
+                resultmes = 'Draw';
+            } else if (
+                (userChoice === 'bat' && computerChoice === 'ball') ||
+                (userChoice === 'ball' && computerChoice === 'stump') ||
+                (userChoice === 'stump' && computerChoice === 'bat')
+            ) {
+                resultmes = 'You Win';
+                score++;
+            } else {
+                resultmes = 'You Lose';
+                score--;
+            }
+
+            document.getElementById('result').innerText = `Computer chose ${computerChoice}\n${resultmes}`;
+            document.getElementById('score').innerText = score;
+        }
+    </script>
+</body>
+</html>
