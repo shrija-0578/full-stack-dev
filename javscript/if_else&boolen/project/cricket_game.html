@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cricket Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #main{
+            background-color: #ffe0e0;
+            width: 40vw;
+            height: 30vh;
+            margin: 20vh auto; 
+            padding: 20px;
+        }
+        #buttons {
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 20px;
+            width: 100px;
+            height: 40px;
+            background-color: #af4c4c;
+            cursor: pointer;
+        }   
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1>Cricket Game</h1>
+        <div id="buttons">
+            <button id="bat" onclick="
+                console.log('you chose bat');
+                let randomNumber=Math.round(Math.random()*3);
+                let computerChoice;
+                if(randomNumber==0)
+                {
+                    computerChoice='bat';
+                    console.log('computer chose bat');
+                }
+                else if(randomNumber==1)
+                {
+                    computerChoice='ball';
+                    console.log('computer chose ball');
+                }
+                else
+                {
+                    computerChoice='stump';
+                    console.log('computer chose stump');
+                }
+
+                let resultmes;
+                if(computerChoice==='bat')
+                {
+                    resultmes='Draw';
+                }
+                else if(computerChoice==='ball')
+                {
+                    resultmes='You Win';
+                }
+                else
+                {
+                    resultmes='You Lose';
+                }
+
+                document.getElementById('result').innerText = 'Computer chose '+computerChoice+'\n '+resultmes;
+                
+                ">Bat</button>
+            <button id="ball">Ball</button>
+            <button id="stump">Stump</button>
+        </div>
+        <h3 id="result"></h3>
+    </div>
+</body>
+</html>
