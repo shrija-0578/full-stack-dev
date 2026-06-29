@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>practice </title>
+</head>
+<body>
+    <script>
+        let age;
+        let gender;
+        age = prompt('Enter your age');
+        gender = prompt('Enter your gender');
+        let discount=0;
+        if(age<=5)
+            discount=100;
+        else if(age<=8)
+            discount=50;
+        else if(age>65)
+            discount=70;
+        else
+            if(gender=='f')
+                discount=50;
+            else
+                discount=0;
+
+        console.log(discount);
+    </script>
+    
+</body>
+</html>
