@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>myntra product</title>
+</head>
+<body>
+        <script>
+            let product={
+                name:'T-shirt',
+                price:500,
+                brand:'Nike',
+                color:'black',
+                // defining a method inside an object
+                getDetails:function()
+                {
+                    return `${this.name}--${this.price}--${this.brand}--${this.color}`;
+                }
+            }
+             
+            console.log(product.getDetails());
+            let copyProduct=product;
+            console.log(copyProduct.getDetails());
+            copyProduct.price=1000;
+            console.log(product.getDetails());
+        </script>
+</body>
+</html>
