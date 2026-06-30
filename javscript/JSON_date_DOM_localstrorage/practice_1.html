@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="message"></h1>
+    <script>
+        let date=new Date();
+        let time=date.getHours();
+        let name=prompt('Enter your name');
+        if(time<12)
+        {
+            document.getElementById('message').innerText='Good Morning';
+        }
+        else if(time<17)
+        {
+            document.getElementById('message').innerText='Good Afternoon';
+        }
+        else
+        {
+            document.getElementById('message').innerText='Good Evening';
+        }
+        document.getElementById('message').innerText+=` ${name}`;
+    </script>
+</body>
+</html>
