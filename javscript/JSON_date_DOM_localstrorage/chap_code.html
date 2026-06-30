@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JSON, Date, DOM, and LocalStorage</title>
+</head>
+<body>
+    <script>   
+        let product = {
+            name: 'T-shirt',
+            price: 500,
+            brand: 'Nike',
+            rating: 4.5,
+            getDetails: function() {
+                return `${this.name}--${this.price}--${this.brand}--${this.color}`;
+            }
+        };
+        console.log('typeof product:', typeof product);
+        console.log(product);
+        // Convert the product object to a JSON string
+        let str = JSON.stringify(product);
+        console.log('typeof str:', typeof str);
+        console.log(str);
+
+        // Convert the JSON string back to a JavaScript object
+        let obj = JSON.parse(str);
+        console.log('typeof obj:', typeof obj);
+        console.log(obj);
+        // strings are very easy to store in localStorage, but objects are not. 
+        // So we need to convert objects to strings before storing them in localStorage.
+    </script>
+    
+</body>
+</html>
