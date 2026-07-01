@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>To Do app</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="main">
+        <h1 class="container">TO DO APP</h1>
+
+        <div id="input_data" class="container">
+            <input id="input_task" placeholder="Enter task" >
+            <input type="date" id="addDate" onclick="addDate()">
+            <button id="addTask" onclick="addTask()">Add</button>
+             
+        </div>  
+
+        <div id="container_list" class="container">
+            <p id="task_list"></p>
+            <p id="task_no">No tasks pending</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>   
+    
+</body>
+</html>
