@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log('question 1');
+        let arr=[5,6];
+        arr.push(7);
+        arr.unshift(4);
+        console.log(arr);
+
+        // question 2
+        console.log('question 2');
+        const arr1=[1,2,3,4,5];
+        console.log(arr1);
+        function getelement(arr,index)
+        {
+            if(index>=0 && index<arr.length)
+            {
+                return arr[index];
+            }
+            else
+            {
+                return 'Invalid index';
+            }
+        }
+        console.log(getelement(arr1, 2));
+        // question 3
+        console.log('question 3');
+        let arr2=arr1.slice(0,(arr1.length));
+        console.log(arr2);
+
+        // question 4
+        console.log('question 4');
+
+        function checkprime(num)
+        {
+            if(num<=1)
+            {
+                return false;
+            }
+            for(let i=2;i<=Math.sqrt(num);i++)
+            {
+                if(num%i==0)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+        let count=0;
+        let i=0;
+        while(count<5)
+        {
+            if(checkprime(i))
+            {
+            console.log(i);
+            count++;
+            }
+        i++;
+        }
+    </script>
+</body>
+</html>
