@@ -31,7 +31,9 @@ function displayBagCount() {
 
 function displayItemsonPage() 
 {
+
     let itemsContainer = document.querySelector(".items_container");
+    if(!itemsContainer) return;
     let innerHTML = "";
     items.forEach((item) => {
         innerHTML += `

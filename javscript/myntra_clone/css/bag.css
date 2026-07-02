@@ -1,3 +1,6 @@
+*{
+   font-size: 18px;
+}
 .bag-items-container {
   display: inline-block;
   width: 64%;
@@ -6,7 +9,7 @@
   padding-top: 32px;
   color: #282c3f;
   font-size: 13px;
-  line-height: 1.42857143;
+  line-height: 1.4;
 }
 
 .bag-page {
@@ -25,11 +28,11 @@
 }
 
 .bag-details-container {
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 .price-header {
-  font-size: 12px;
+  font-size: 0.7rem;
   font-weight: 700;
   margin: 24px 0 16px;
   color: #535766;
@@ -38,7 +41,7 @@
 .price-item {
   margin-bottom: 12px;
   line-height: 16px;
-  font-size: 14px;
+  font-size: 0.9rem;
   color: #282c3f;
 }
 
@@ -52,7 +55,7 @@
 
 .price-footer {
   font-weight: 700;
-  font-size: 15px;
+  font-size: 1rem;
   padding-top: 16px;
   border-top: 1px solid #eaeaec;
   color: #3e4152;
@@ -62,7 +65,7 @@
 .btn-place-order {
   width: 100%;
   letter-spacing: 1px;
-  font-size: 14px;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 2px;
   border-width: 0px;
@@ -75,7 +78,7 @@
 .bag-item-container {
   margin-bottom: 8px;
   background: #fff;
-  font-size: 14px;
+  font-size: 0.8rem;
   border: 1px solid #eaeaec;
   border-radius: 4px;
   position: relative;
@@ -103,7 +106,7 @@
 
 .return-period {
   display: inline-flex;
-  font-size: 14px;
+  font-size: 0.8rem;
   padding-top: 8px;
 }
 
@@ -115,7 +118,7 @@
 .delivery-details {
   margin-top: 5px;
   color: #282c3f;
-  font-size: 12px;
+  font-size: 0.7rem;
   letter-spacing: -.1px;
   margin-bottom: 8px;
   line-height: 15px;
@@ -127,7 +130,7 @@
 
 .remove-from-cart {
   position: absolute;
-  font-size: 25px;
+  font-size: 1.5rem;
   top: 10px;
   right: 18px;
   width: 14px;
