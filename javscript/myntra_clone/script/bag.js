@@ -3,6 +3,9 @@ let bagItemsObjects;
 let CONVENIENCE_FEES=99;
 onLoad();
 
+
+
+// functions
 function onLoad(){
     loadBagItemsObjects()
     displayBagItems();
@@ -35,6 +38,7 @@ function removeFromBag(itemId)
 {
     bagItems=bagItems.filter(bagItemId => bagItemId !== itemId);
     localStorage.setItem('bagItems',JSON.stringify(bagItems));
+    
     loadBagItemsObjects();
     displayBagItems();
     displayBagCount();
