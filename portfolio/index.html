@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Shrija Lal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- ============ NAV ============ -->
+    <nav>
+        <div class="logo">SL<span>.</span></div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <ul id="navList">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <header id="home" class="hero">
+        <div class="hero-inner">
+            <div class="hero-content reveal">
+                <h1>Hi, I'm <span class="accent">Shrija Lal</span></h1>
+                <p class="role">Aspiring Software Engineer &mdash; Web Developer in Progress</p>
+                <p class="hero-desc">I design and build clean, responsive interfaces, and I enjoy turning ideas into working products one component at a time.</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Hire Me</a>
+                    <a href="#projects" class="btn btn-ghost">View Work</a>
+                </div>
+            </div>
+            <div class="hero-media reveal">
+                <div class="hero-frame">
+                    <img src="my.png" alt="Shrija Lal">
+                </div>
+            </div>
+        </div>
+
+        <div class="social-rail">
+            <a href="https://www.linkedin.com/in/shrija-lal-5138a6402/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/shrija-0578" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <span class="rail-line"></span>
+        </div>
+
+        
+    </header>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="about">
+        <p class="eyebrow center">// 01 &mdash; about</p>
+        <h2 class="reveal">About Me</h2>
+        <div class="about-grid">
+            <p class="about-text reveal">
+                I'm a Computer Science student who loves the moment a design turns into working code.
+                I care about clean structure, thoughtful details, and building things that actually feel
+                good to use &mdash; from small UI touches to full page layouts. Right now I'm sharpening my
+                skills in web development while exploring where design and engineering meet.
+            </p>
+            <div class="stats reveal">
+                <div class="stat">
+                    <span class="stat-num">3+</span>
+                    <span class="stat-label">Projects Shipped</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">7</span>
+                    <span class="stat-label">Core Technologies</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">100%</span>
+                    <span class="stat-label">Self&#8209;Driven Learning</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills">
+        <p class="eyebrow center">// 02 &mdash; skills</p>
+        <h2 class="reveal">My Skills</h2>
+        <div class="skill-tags reveal">
+            <div><i class="fa-brands fa-python"></i><span>Python</span></div>
+            <div><i class="fa-solid fa-code"></i><span>C++</span></div>
+            <div><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+            <div><i class="fa-brands fa-html5"></i><span>HTML</span></div>
+            <div><i class="fa-brands fa-css3-alt"></i><span>CSS</span></div>
+            <div><i class="fa-solid fa-mobile-screen"></i><span>Responsive Design</span></div>
+            <div><i class="fa-brands fa-git-alt"></i><span>Git &amp; GitHub</span></div>
+        </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects">
+        <p class="eyebrow center">// 03 &mdash; projects</p>
+        <h2 class="reveal">Projects</h2>
+        <div class="project-grid reveal">
+            <div class="card">
+                <span class="card-index">01</span>
+                <h3>Portfolio Website</h3>
+                <p>Responsive HTML &amp; CSS portfolio design with a custom dark theme.</p>
+            </div>
+            <a class="card-link" href="https://shrija-0578.github.io/amazon_clone-/" target="_blank">
+                <div class="card">
+                    <span class="card-index">02</span>
+                    <h3>Amazon Clone <i class="fa-solid fa-arrow-up-right-from-square"></i></h3>
+                    <p>Clean, validated storefront layout built with HTML.</p>
+                </div>
+            </a>
+            <a class="card-link" href="https://shrija-0578.github.io/Todo_project/" target="_blank">
+                <div class="card">
+                    <span class="card-index">03</span>
+                    <h3>To-Do App <i class="fa-solid fa-arrow-up-right-from-square"></i></h3>
+                    <p>Simple task management app built with JavaScript.</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- ============ HOBBIES ============ -->
+    <section id="hobbies">
+        <p class="eyebrow center">// 04 &mdash; beyond code</p>
+        <h2 class="reveal">Beyond Code: My Creative Side</h2>
+        <p class="section-sub reveal">A collection of my creative work blending patterns, colors, and perspective.</p>
+
+        <div class="gallery-container reveal">
+            <div class="gallery-slider">
+                <div class="slide"><img src="ph1.jpg" alt="Photography"></div>
+                <div class="slide"><img src="art1.jpg" alt="Mandala Art"></div>
+                <div class="slide"><img src="ph2.jpg" alt="Photography"></div>
+                <div class="slide"><img src="art3.jpg" alt="Art"></div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1)" aria-label="Previous slide">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)" aria-label="Next slide">&#10095;</button>
+            <div class="dots" id="galleryDots"></div>
+        </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact">
+        <p class="eyebrow center">// 05 &mdash; contact</p>
+        <h2 class="reveal">Let's Connect</h2>
+        <p class="section-sub reveal">Have a project in mind or just want to say hi? My inbox is open.</p>
+
+        <form id="contact-form" class="reveal">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+
+            <button type="submit" class="btn-send">Send Message</button>
+            <p class="form-status" id="formStatus"></p>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Shrija Lal. Built with HTML, CSS &amp; JavaScript.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
