@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>books</title>
+    <link rel="stylesheet" href="main_style.css">
+</head>
+<body>
+    <h1 id="heading">Books Table</h1>
+    <div id="Table" >
+        <table>
+            <tr>
+                <th>Product Code</th>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Purchase</th>
+                <th>Quantity</th>
+            </tr>
+
+            <tr>
+                <td>601</td>
+                <td>Biography Of Prem Chand</td>
+                <td>200</td>
+                <td><input type="checkbox" id="ps1" onclick="enable(ps1,q1)"></td>
+                <td><input type="text" id="q1"></td>
+            </tr>
+            <tr>
+            <td>602</td>
+            <td>Harry Potter</td>
+            <td>1500</td>
+            <td><input type="checkbox" id="ps2" onclick="enable(ps2,q2)"></td>
+            <td><input type="text" id="q2"></td>
+            </tr>
+
+            <tr>
+                <td>603</td>
+                <td>Discovery Of India</td>
+                <td>650</td>
+                <td><input type="checkbox" id="ps3" onclick="enable(ps3,q3)"></td>
+                <td><input type="text" id="q3"></td>
+            </tr>
+
+            <tr>
+                <td>604</td>
+                <td>All-Lab Story</td>
+                <td>250</td>
+                <td><input type="checkbox" id="ps4" onclick="enable(ps4,q4)"></td>
+                <td><input type="text" id="q4"></td>
+            </tr>
+
+            <tr>
+                <td>605</td>
+                <td>Amitabh Bachchan</td>
+                <td>500</td>
+                <td><input type="checkbox" id="ps5" onclick="enable(ps5,q5)"></td>
+                <td><input type="text" id="q5"></td>
+            </tr>
+        </table>
+        <hr>
+        <div id="button_container">
+            <button id="show_bill" class="button">show my bill</button>
+            <button id="rest" class="button" >rest</button>
+        </div>
+    
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
